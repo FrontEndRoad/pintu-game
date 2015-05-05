@@ -1,0 +1,33 @@
+/*******************************************************
+ *@ Name: HTML5拼图游戏
+ *@ Time: 2015/5/5
+ *@ Author: FrontEndZQ
+*/
+
+一、注意事项
+1、基于Jquery 开发；
+2、引用interactJS插件，通过dropzones功能改写开发；
+3、图片预加载引用imagesloaded.min.js; 
+4、移动适配，引用viewport.js；
+
+
+二、结构说明
+1、选择图片模板
+2、点击确认按钮，进入拼图游戏
+3、优雅的计时器
+
+
+三、核心代码解析
+存放块：<span class="dropzone g1" id="drop1"></span>
+拖拽块：<img class="js-drag" id="drag7" src="images/pk/modea07.png" />
+
+通过调用方法：setupDropzone('#drop1', '#drag1');达到拖拽与吻合的目的。
+
+移动正确，将当前图片添加到对应的存放块中，并删除原拖拽块中的图片；
+event.target.innerHTML= '<img class="addImg" id="a'+event.relatedTarget.id+'" src="'+a.src+'" alt="" />';
+event.relatedTarget.parentNode.removeChild(event.relatedTarget);
+移动错误，则原路弹回; 
+
+具体效果见源码！
+
+如有问题或建议，请邮件至：zhangqian0406@yeah.net
