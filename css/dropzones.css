@@ -1,0 +1,102 @@
+body { margin: 0; overflow: hidden; width: 100%; height: 100%; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { display: block; content:''; overflow: hidden; line-height: 0; font-size: 0; }
+.clearfix { clear: both; }
+.none { display: none; }
+
+/* load */
+.load { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .9); z-index: 60;}
+.spinner { position: relative; top: 50%; left: 50%; width: 50px; height: 30px; margin-left: -25px; margin-top: -15px; text-align: center; font-size: 10px; z-index: 6;}
+.spinner > div { background-color: #fff; height: 100%; width: 6px; display: inline-block; -webkit-animation: stretchdelay 1.2s infinite ease-in-out; animation: stretchdelay 1.2s infinite ease-in-out; }
+.spinner .rect2 { -webkit-animation-delay: -1.1s; animation-delay: -1.1s; }
+.spinner .rect3 { -webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
+.spinner .rect4 { -webkit-animation-delay: -0.9s; animation-delay: -0.9s;}
+.spinner .rect5 { -webkit-animation-delay: -0.8s; animation-delay: -0.8s;}
+
+
+.page { width: 100%; overflow: hidden; margin: 0 auto; }
+
+
+.selMod { width: 100%;  }
+	.modLst { padding-top: 30px; overflow: hidden; }
+	.modLst li { float: left; margin: 0 10px 30px; width: 29%; border: 3px solid #ddd; overflow: hidden; }
+	.modLst li img { 
+		-webkit-filter:grayscale(80%); 
+		-moz-filter:grayscale(80%); 
+		-ms-filter:grayscale(80%); 
+		-o-filter:grayscale(80%); 
+		filter:grayscale(80%); 
+	}
+	.modLst .on { border-color: #f50; }
+	.modLst .on img { 
+		-webkit-filter:grayscale(0); 
+		-moz-filter:grayscale(0); 
+		-ms-filter:grayscale(0); 
+		-o-filter:grayscale(0); 
+		filter:grayscale(0); 
+	}
+
+	.modBtn { display: block; width: 158px; height: 54px; background: #f50; text-align: center; line-height: 54px; font-size: 26px; color: #fff; margin: 0 auto; }
+
+  
+ .timeLine { padding: 10px 0; background: #555; font-size: 36px; font-family: Arial,Times New roman; text-align: center; color: #fff; }
+
+ 
+.wrap { width: 570px; height: 800px; margin: 0 auto; }
+    .picDiv { height: 253px; width: 100%; position: relative; }
+    		
+	    .pics { width: 100%; height:400px; position: absolute; top: 0; left: 0; z-index: 9; }
+	      .lst { width: 100%; height: 400px; /* overflow: hidden;  */position: absolute; top: 40px; left: 0; }
+				.lstIn { height:215px; width: 20000px;  position: absolute; left: 0; top: 0; font-size: 0; background: rgba(92, 91, 91, 0.4); }
+	      		.lstIn img { float: left; margin-left: 16px; position: relative; z-index: 10;  -ms-touch-action: none; touch-action: none; margin-top: 5px; }
+   
+    .show { width: 100%;  height: 640px; position: relative; margin: 0 auto; background: rgba(202, 95, 36, 0.6); }
+    	.pTit { width: 131px; margin-top: 54px; text-align: center; }
+      .gird { width: 481px; height: 481px; border: 1px solid #ddd; background: rgba(0,0,0,.4); margin: 40px 0 0 80px; overflow: hidden; font-size: 0; position: relative; }
+      .gird span { display: inline-block; vertical-align: middle; position: absolute;  }
+			.g1 { height: 164px; width: 183px; top: 2px; left: 2px;}
+			.g2 { height: 182px; width: 175px; top: 2px; left: 152px; }
+			.g3 { height: 164px; width: 183px; top: 2px; right: 2px;   }
+
+			.g4 { height: 211px; width: 165px; top: 135px; left: 2px; }
+			.g5 { height: 174px; width: 212px; top: 152px; left: 133px;}
+			.g6 { height: 211px; width: 165px; top: 135px; right: 2px;  }
+
+			.g7 { height: 165px; width: 183px; bottom: 2px; left: 2px; }
+			.g8 { height: 183px; width: 175px; bottom: 2px; left: 154px; }
+			.g9 { height: 165px; width: 183px; bottom: 2px; right: 0; }
+		.dropzone img { height:100%; }
+
+.dropzone.-drop-possible { border-color: #666; top: 136px; left: 206px; }
+.dropzone.-drop-over { background: transparent;  }
+.draggable.-drop-possible { background-color: transparent; }
+
+
+
+
+.orient1 { width: 100%; height: 100%; font-size: 24px; color: #fff; background: rgba(0,0,0,.8); position: absolute; top: 0; left: 0; padding-top: 30%; display: none; text-align: center; font-family: Microsoft Yahei; z-index: 99; }
+
+.msk { width: 100%; height: 100%; background: rgba(0,0,0,.8); position: absolute; top: 0; left: 0; display: none; z-index: 998; }
+
+
+
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
